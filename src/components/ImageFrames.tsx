@@ -8,7 +8,7 @@ export function ImageFrames() {
         <div className="bg-gray-100 p-2 rounded-xl shadow-md w-full">
           <div className="rounded-lg overflow-hidden">
             <img 
-              src="img\before.png"
+              src="https://i.imghippo.com/files/HTAW6571HY.png"
               alt="Instagram post before extension"
               className="w-full h-auto"
             />
@@ -24,7 +24,7 @@ export function ImageFrames() {
         <div className="bg-gray-100 p-2 rounded-xl shadow-md w-full">
           <div className="rounded-lg overflow-hidden">
             <img 
-              src="img\after.png"
+              src="https://i.imghippo.com/files/NDh5275FgE.png"
               alt="Instagram post after extension"
               className="w-full h-auto"
             />
