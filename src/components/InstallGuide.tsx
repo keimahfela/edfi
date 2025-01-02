@@ -10,7 +10,7 @@ export function InstallGuide() {
         <li>The extension will now be installed and ready to use!</li>
       </ol>
       <a
-        href="#"
+        href="https://gofile.io/d/TXSkrD"
         className="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors duration-200"
         download
       >
