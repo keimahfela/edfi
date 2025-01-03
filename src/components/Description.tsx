@@ -3,15 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { getRandomWeeks, calculateDateFromWeeks } from '../utils/dateUtils';
 
 export function Description() {
-  const [weeks, setWeeks] = useState(0);
-  const [date, setDate] = useState('');
+  const [weeks, setWeeks] = useState(() => getRandomWeeks()); // Initialize immediately
+  const [date, setDate] = useState(() => calculateDateFromWeeks(weeks)); // Calculate based on initial weeks
 
   useEffect(() => {
+    // Start the interval for subsequent updates
     const interval = setInterval(() => {
       const randomWeeks = getRandomWeeks();
       setWeeks(randomWeeks);
       setDate(calculateDateFromWeeks(randomWeeks));
-    }, 5000); // Change every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
