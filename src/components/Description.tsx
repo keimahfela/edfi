@@ -12,7 +12,7 @@ export function Description() {
       const randomWeeks = getRandomWeeks();
       setWeeks(randomWeeks);
       setDate(calculateDateFromWeeks(randomWeeks));
-    }, 5000);
+    }, 5000); // Update every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -24,7 +24,7 @@ export function Description() {
       className="relative"
     >
       <p className="text-xl text-gray-600 mb-12 leading-relaxed">
-        Tired of Instagram's cryptic timestamps? We transform those puzzling{' '}
+        Tired of Instagram's vague timestamps? We transform those puzzling{' '}
         <AnimatePresence mode="wait">
           <motion.span
             key={weeks}
