@@ -12,7 +12,7 @@ export function Description() {
       const randomWeeks = getRandomWeeks();
       setWeeks(randomWeeks);
       setDate(calculateDateFromWeeks(randomWeeks));
-    }, 7000); // Update every 7 seconds
+    }, 8000); // Update every 8 seconds
 
     return () => clearInterval(interval);
   }, []);
