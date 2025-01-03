@@ -17,27 +17,20 @@ export function Step({ number, title, description, Icon }: StepProps) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: number * 0.1 }}
     >
-      {/* Number Circle */}
       <motion.div 
         className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white font-bold"
         whileHover={{ scale: 1.1 }}
       >
         {number}
       </motion.div>
-
-      {/* Content */}
       <div className="flex-grow">
-        {/* Title and Icon */}
         <div className="flex items-center space-x-2 mb-1">
           <Icon className="w-5 h-5 text-purple-600" />
           <h3 className="font-semibold text-gray-800">{title}</h3>
         </div>
-
-        {/* Description with Responsive Alignment */}
-        <div className="flex items-start">
-          {/* Placeholder for Icon Space */}
-          <div className="w-5 h-5 flex-shrink-0 hidden sm:block"></div>
-          <p className="text-gray-600 sm:pl-0 pl-7">{description}</p>
+        <div className="flex items-start space-x-2">
+          <div className="w-5 h-5 flex-shrink-0"></div> {/* Placeholder for icon space */}
+          <p className="text-gray-600">{description}</p>
         </div>
       </div>
     </motion.div>
