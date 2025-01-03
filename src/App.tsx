@@ -5,6 +5,7 @@ import { Description } from './components/Description';
 import { FeatureCard } from './components/FeatureCard';
 import { InstallGuide } from './components/InstallGuide';
 import { ImageFrames } from './components/ImageFrames';
+import { Footer } from './components/Footer';
 
 export default function App() {
   return (
@@ -25,17 +26,17 @@ export default function App() {
             <FeatureCard
               icon={<Clock className="h-6 w-6 text-purple-600" />}
               title="Instant Conversion"
-              description="Timestamps update automatically as you browse."
+              description="Timestamps update automatically as you browse"
             />
             <FeatureCard
               icon={<Download className="h-6 w-6 text-purple-600" />}
               title="Easy Installation"
-              description="Simple setup process with clear instructions."
+              description="Simple setup process with clear instructions"
             />
             <FeatureCard
               icon={<Calendar className="h-6 w-6 text-purple-600" />}
               title="Works Everywhere"
-              description="Converts dates on posts, comments, and stories."
+              description="Converts dates on posts, comments, and stories"
             />
           </div>
 
@@ -45,11 +46,7 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="container mx-auto px-4 py-8 mt-16 border-t">
-        <div className="text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Exact Date for Instagram. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
