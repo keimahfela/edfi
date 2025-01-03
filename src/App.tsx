@@ -3,7 +3,7 @@ import { Clock, Download, Calendar } from 'lucide-react';
 import { Header } from './components/Header';
 import { Description } from './components/Description';
 import { FeatureCard } from './components/FeatureCard';
-import { InstallGuide } from './components/InstallGuide';
+import { InstallGuide } from './components/InstallGuide/InstallGuide';
 import { ImageFrames } from './components/ImageFrames';
 import { Footer } from './components/Footer';
 
