@@ -28,7 +28,10 @@ export function Step({ number, title, description, Icon }: StepProps) {
           <Icon className="w-5 h-5 text-purple-600" />
           <h3 className="font-semibold text-gray-800">{title}</h3>
         </div>
-        <p className="text-gray-600 pl-7">{description}</p>
+        <div className="flex items-start space-x-2">
+          <div className="w-5 h-5 flex-shrink-0"></div> {/* Placeholder for icon space */}
+          <p className="text-gray-600">{description}</p>
+        </div>
       </div>
     </motion.div>
   );
